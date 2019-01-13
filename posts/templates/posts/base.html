@@ -1,0 +1,59 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html>
+	<head>
+		<title>Simple Page</title>
+		<!-- Stylesheet bar -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+	</head>
+<body>
+
+<div class="header">
+  <a href="/posts" class="logo"><img src="{% static 'images/blog-logo.jpg' %}" alt="IMAGE NOT FOUND"></a>
+  
+  <div class="header-right">
+  
+    <a class="active" href="/posts">Home</a>
+	<a href="/admin">Admin</a>
+    
+	
+  </div>
+  
+</div>
+<div class="row">
+		<div class="column">
+			<img src="{% static 'images/colu.jpg' %}" alt='not found'/>
+		</div>
+<div class="column1">
+
+		<div class="content">
+<!-- Main Content bar -->
+
+
+{% block content %}
+<br><Br><br>
+    
+{% endblock %}<br>
+<br>
+
+
+		</div>
+</div>
+
+</div>
+
+
+<div class="panel-footer">
+<!-- Footer bar -->
+<div >
+<p class="small"  >Designed by Arun</P>
+</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}<br>
+    <h2 class="center-align red lighten-3"> Post your Blog </h2>
+    <form method="POST" class="post-form">
+	{% csrf_token %}
+	<table class="table-hover">
+	<tr>
+        {{ form.as_table }}
+        </tr>
+		</table>
+		<button type="submit" class="save btn btn-default">Save</button>
+   
+	<a href="/posts" class="btn">Go Back</a>
+	</form>
+{% endblock %}

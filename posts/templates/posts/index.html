@@ -1,0 +1,17 @@
+{% extends "posts/base.html" %}
+
+{% load staticfiles %}
+
+{%block content %}
+<div>
+<br>
+<h3>&nbsp;&nbsp;
+<p class="text-center"> Welcome to My Blog <br>Post Application 
+</p>
+<a href="{% url 'posts:add' %}" class="btn btn-info" name="add">Add</a>
+<a href="{% url 'posts:view' %}" class="btn btn-info" name="view">View </a>
+</h3>
+</div>
+
+
+{% endblock %}

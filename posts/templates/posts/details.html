@@ -1,0 +1,23 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}<br>
+<h3 class="center-align red lighten-3  ">{{post.Name}} </h3>
+<div class="card">
+    <div class="card-content">
+      <p >  {{post.Content}}
+	</p>	
+      
+    </div>
+
+   <div class="card-action" >
+
+	
+    {{post.Created_At}}
+	
+   </div>
+
+
+</div>
+<a href="/posts/view" class="btn">Go Back</a>
+{% endblock %}   
+ 

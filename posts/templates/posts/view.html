@@ -1,0 +1,20 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}<br>
+<h3 class="center-align red lighten-3  ">Blog Post </h3>
+<ul class="collection">
+    {% for post in posts %}
+        <div class="collection-item">
+		
+		<a href="/posts/details/{{post.id}}" class="view-link"> {{post.Name }}</a>
+		
+		</div>
+    {% endfor %}
+
+
+
+</ul>
+
+<a href="/posts" class="btn">Go Back</a>
+{% endblock %}   
+ 
